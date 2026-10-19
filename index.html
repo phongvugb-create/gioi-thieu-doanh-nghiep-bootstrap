@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Công Ty</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #4f46e5);
+            padding: 90px 20px;
+        }
+
+        .service-card {
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        section {
+            scroll-margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                Doanh Nghiệp
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Mở menu điều hướng">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Dịch Vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">
+                Chào mừng đến với Công Ty Chúng Tôi
+            </h1>
+
+            <p class="lead mb-4">
+                Chúng tôi cung cấp các giải pháp chuyên nghiệp
+                cho doanh nghiệp của bạn.
+            </p>
+
+            <a href="#services" class="btn btn-light btn-lg">
+                Tìm Hiểu Ngay
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Về Chúng Tôi</h2>
+
+        <p class="text-center text-secondary mx-auto" style="max-width: 800px;">
+            Công ty chúng tôi chuyên cung cấp các dịch vụ công nghệ,
+            thiết kế website và tiếp thị kỹ thuật số. Chúng tôi hướng
+            đến những giải pháp hiệu quả, sáng tạo và phù hợp với nhu
+            cầu của từng doanh nghiệp.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-2">
+                Dịch Vụ Của Chúng Tôi
+            </h2>
+
+            <p class="text-center text-secondary mb-5">
+                Giải pháp hỗ trợ doanh nghiệp phát triển.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- Service 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">💻</div>
+                            <h3 class="card-title h4">
+                                Thiết Kế Website
+                            </h3>
+                            <p class="card-text text-secondary">
+                                Thiết kế giao diện chuyên nghiệp,
+                                thân thiện và tối ưu trải nghiệm người dùng.
+                            </p>
+                            <a href="#contact" class="btn btn-primary">
+                                Tìm hiểu thêm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">📈</div>
+                            <h3 class="card-title h4">
+                                Marketing Online
+                            </h3>
+                            <p class="card-text text-secondary">
+                                Giải pháp tiếp thị số giúp tăng khả năng
+                                tiếp cận khách hàng và phát triển thương hiệu.
+                            </p>
+                            <a href="#contact" class="btn btn-primary">
+                                Tìm hiểu thêm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">🎧</div>
+                            <h3 class="card-title h4">
+                                Hỗ Trợ Khách Hàng
+                            </h3>
+                            <p class="card-text text-secondary">
+                                Hỗ trợ giải đáp thắc mắc và đồng hành
+                                cùng khách hàng trong quá trình sử dụng dịch vụ.
+                            </p>
+                            <a href="#contact" class="btn btn-primary">
+                                Tìm hiểu thêm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 text-center">
+        <h2 class="fw-bold mb-4">Liên Hệ Với Chúng Tôi</h2>
+
+        <p>
+            Email:
+            <a href="mailto:contact@company.com">
+                contact@company.com
+            </a>
+        </p>
+
+        <p>Hotline: 0988 123 456</p>
+
+        <a href="mailto:contact@company.com" class="btn btn-primary mt-2">
+            Gửi Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">
+                &copy; 2026 Công Ty Chúng Tôi. All rights reserved.
+            </p>
+            <small class="text-secondary">
+                Trang giới thiệu doanh nghiệp sử dụng Bootstrap 5.
+            </small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
